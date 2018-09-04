@@ -1,5 +1,6 @@
 :root {
 	--all-color: #171717;
+	--dark-gray: #383838;
 	--green: #63a603;
 	--orange: #f46510;
 	--orange-logo: #fbb03b;
@@ -67,7 +68,8 @@ section {
 .top-menu {
 	background-color:#fff;
 	padding: 5px 0;
-	position: fixed;
+	/*position: fixed;*/
+	position: relative;
 	z-index: 500;
 	top: 0;
 	left: 0;
@@ -80,9 +82,15 @@ section {
 }
 
 .logo img {
-	max-width: 100%;
+	width: 100%;
+	max-width: 210px;
 }
-
+@media (min-width: 576px) {
+	.logo img {
+		width: 100%;
+		max-width: 300px;
+	}
+}
 .main-menu-col {
 	position: relative;
 }
@@ -91,8 +99,8 @@ section {
 	width: 52px;
 	height: 50px;
 	vertical-align: middle;
-	margin-right: 30px;
-	background-color: var(--blue);
+	margin-right: 10px;
+	background-color: var(--dark-gray);
 	border: 1px solid var(--all-color);
 	padding: 5px;
 	display: flex;
@@ -135,7 +143,7 @@ section {
 	-webkit-box-shadow: 0 1px 2px #000;
 	-moz-box-shadow:  0 1px 2px #000;
 	box-shadow:  0 1px 2px #000;
-	border: 1px solid var(--blue);
+	border: 1px solid var(--orange-logo);
 }
 .main-menu ul {
 	list-style: none;
@@ -155,7 +163,7 @@ section {
 	padding: 5px 15px;
 }
 .main-menu ul li.active a {
-	color: var(--blue);
+	color: var(--green);
 	text-decoration: none;
 }
 .main-menu ul li.active a::after {
@@ -167,7 +175,7 @@ section {
 	bottom: 4px;
 	height: 1px;
 	overflow: hidden;
-	background-color: var(--blue);
+	background-color: var(--orange-logo);
 }
 @media (min-width: 1200px) {
 	.burger {
@@ -177,7 +185,7 @@ section {
 		-webkit-box-shadow: 0 0 0 #000;
 		-moz-box-shadow:  0 0 0  #000;
 		box-shadow:  0 0 0  #000;
-		border: 0 none var(--blue);
+		border: 0 none var(--green);
 	}
 	.main-menu {
 		display: block !important;
