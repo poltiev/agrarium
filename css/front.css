@@ -1,0 +1,24 @@
+:root {
+	--all-color: #131f2b;
+	--blue: #177ff4;
+	--dark: rgba(37, 37, 37, 1);
+	--my-green: #0cdd36;
+	--light-bg: #9adaec;
+	--light-green: #8ae19b;
+	--light-gray: #c3c3c3;
+	
+	--orange-light: #e4bc39;
+	--orange-light2: #f7e4a3;
+	--color-soc-f: #3b5998;
+
+}
+
+body {
+	background-color: #777777;
+	color: var(--all-color);
+}
+
+section {
+	max-width: 1900px;
+	margin: 0 auto;
+}
