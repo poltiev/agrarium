@@ -48,6 +48,9 @@ section {
 	color: var(--white);
 	background-color: var(--green);
 }
+.in:hover, .reg:hover {
+	color: var(--white);
+}
 .reg {
 	margin-left: 15px;
 	background-color: var(--orange);
@@ -76,6 +79,7 @@ section {
 	right: 0;
 	height: auto;
 	transition: .5s;
+	box-shadow: 0 1px 2px rgba(0, 0, 0, .5);
 }
 .top-menu.active {
 	box-shadow: 0 1px 3px rgba(0, 0, 0, .5)
@@ -93,6 +97,11 @@ section {
 }
 .main-menu-col {
 	position: relative;
+}
+@media (min-width: 1200px){
+	.main-menu-col {
+		margin-top: 17px;
+	}
 }
 .burger {
 	border-radius: 2px;
@@ -162,6 +171,7 @@ section {
 	position: relative;
 	color: var(--all-color);
 	padding: 5px 15px;
+	font-weight: 600;
 }
 .main-menu ul li.active a {
 	color: var(--green);
@@ -176,7 +186,7 @@ section {
 	bottom: 4px;
 	height: 1px;
 	overflow: hidden;
-	background-color: var(--orange-logo);
+	background-color: var(--orange);
 }
 @media (min-width: 1200px) {
 	.burger {
@@ -198,4 +208,20 @@ section {
 	.main-menu ul {
 		flex-direction: row;
 	}
+}
+
+/*Разметка содержимого*/
+.contant {
+	border: 1px solid transparent;
+	padding-top: 40px;
+}
+/*Подвал*/
+.footer {
+	background-color: var(--green);
+	color: var(--white);
+	text-align: center;
+	margin-top: 90px;
+}
+.footer article {
+	padding: 25px;
 }
