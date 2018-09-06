@@ -1,10 +1,12 @@
 :root {
 	--all-color: #171717;
 	--dark-gray: #383838;
+	--middle-gray: #595959;
+	--light-gray: #f5f5f5;
 	--green: #63a603;
+	--middle-green: #b1ff9a;
 	--orange: #f46510;
 	--orange-logo: #fbb03b;
-	--light-gray: #f5f5f5;
 	--white: #fff;
 }
 
@@ -273,8 +275,94 @@ section {
 }
 /*Чат*/
 .module.chat {
-	border: 1px solid var(--green);
-}
-.module .chat-box {
 
+}
+.chat-box {
+	font-size: 0.9rem;
+	height: 500px;
+	overflow: auto;
+	border-top: 1px solid var(--middle-green);
+	border-bottom: 1px solid var(--middle-green);
+}
+.chat-box dl {
+	padding: 5px;
+}
+.chat-box > dl {
+	border:1px solid var(--middle-green);
+	background-color: var(--middle-green) ;
+}
+.chat-box > dl:nth-of-type(odd) dl {
+	border:1px solid var(--white);
+}
+.chat-box > dl:nth-of-type(odd) dl:nth-of-type(odd) {
+	background-color: var(--white);
+}
+.chat-box > dl dl:first-of-type{
+	margin-top: 20px;
+}
+.chat-box > dl:nth-of-type(even) {
+	background-color: var(--white);
+}
+.chat-box > dl:nth-of-type(even) dl:nth-of-type(odd) {
+	background-color: var(--middle-green);
+}
+.chat-box > dl:nth-of-type(even) dl:nth-of-type(even) {
+	border: 1px solid var(--middle-green);
+}
+.chat-box > dl dl {
+	margin-left: 32px;
+}
+.chat-box h4 {
+	margin-left: 5px;
+}
+.chat-box > dl dd {
+	margin: 5px;
+}
+.chat-title {
+	display: flex;
+	align-items: center;
+}
+.chat-header {
+	display: flex;
+	flex-direction: column;
+	margin-left: 10px;
+}
+.chat-name {
+	font-weight: 600;
+	line-height: 1.2rem;
+}
+.chat-data {
+	font-weight: 400;
+	color: var(--middle-gray);
+	line-height: 1.2rem;
+}
+/*Карточка фермера*/
+.cart-f {
+	display: flex;
+}
+.cart-f > figure {
+
+}
+.cart-cont {
+	flex-grow: 1;
+	padding-left: 20px;
+}
+ul.cont-text {
+	list-style: none;
+	padding-left: 0;
+}
+ul.cont-text li {
+	display: flex;
+}
+.first {
+	width: 80px;
+	color: var(--middle-gray);
+	font-size: 0.9rem;
+}
+.two {
+	flex-grow: 1;
+}
+.cart-name {
+	font-weight: 600;
+	font-size: 1.2rem;
 }
