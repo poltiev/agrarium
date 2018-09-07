@@ -25,6 +25,7 @@ section {
 }
 .contacts {
 	text-align: center;
+	font-size: 0.9rem;
 }
 .telephone .icon-phone {
 	color: var(--green);
@@ -45,8 +46,7 @@ section {
 }
 
 .in, .reg {
-	
-	padding: 8px 18px;
+	padding: 8px 18px 8px 10px;
 	color: var(--white);
 	background-color: var(--green);
 }
@@ -250,7 +250,7 @@ section {
 .module > h3 {
 	font-size: 1.4rem;
 	padding-left: 18px;
-	color: var(--orange-logo);
+	color: var(--orange);
 }
 .left-menu ul {
 	list-style: none;
@@ -365,4 +365,73 @@ ul.cont-text li {
 .cart-name {
 	font-weight: 600;
 	font-size: 1.2rem;
+}
+.partner-title h1 {
+	font-size: 1.7rem;
+	color: var(--orange);
+	text-transform: uppercase;
+	margin-bottom: 30px;
+}
+.partner-logo figure img {
+	width: 100%;
+}
+.partner-maps a {
+	display: inline-block;
+	text-align: center;
+	padding: 8px 18px;
+	color: var(--white);
+	background-color: var(--green);
+	font-size: 0.9rem;
+}
+.description {
+	margin: 15px 0;
+}
+.partner-photo figure img {
+	width: 100%;
+}
+.categories {
+	font-family: "Roboto Condensed", sans-serif;
+	font-size: 1.5rem;
+	color: var(--orange);
+	display: flex;
+	align-items: center;
+	border: 1px solid var(--green);
+	padding: 5px 10px;
+	margin: 20px 0;
+}
+.cooperation > span, .categories span {
+	font-size: 0.9rem;
+	color: var(--middle-gray);
+	font-family: 'Open Sans', sans-serif;
+	padding-right: 5px;
+}
+.cooperation {
+	display: flex;
+	align-items: center;
+	border: 1px solid var(--green);
+	padding: 5px 10px;
+	margin: 20px 0;
+}
+.categories-col-r {
+	display: flex;
+	flex-direction: column;
+	font-family: "Roboto Condensed", sans-serif;
+	font-size: 1.5rem;
+	line-height: 1.3em;
+	color: var(--orange);
+	
+}
+.categories-down {
+	color: var(--orange);
+}
+.categories-col-r > div {
+	margin: 10px 0;
+}
+.partner-line-shop {
+	display: flex;
+	
+	margin: 0 -10px;
+}
+.partner-rating, .partner-logo, .partner-name, .partner-category, .partner-contact{
+	padding: 0 10px;
 }

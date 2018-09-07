@@ -337,3 +337,7 @@ template {
 .left {
 	text-align: left;
 }
+
+.border-red {
+  border: 1px solid red;
+}
