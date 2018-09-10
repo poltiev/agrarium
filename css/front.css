@@ -213,7 +213,7 @@ section {
 }
 
 /*Разметка содержимого*/
-.contant {
+.content {
 	border: 1px solid transparent;
 	padding-top: 40px;
 	padding-bottom: 80px;
@@ -309,6 +309,10 @@ section {
 .chat-box > dl:nth-of-type(even) dl:nth-of-type(even) {
 	border: 1px solid var(--middle-green);
 }
+.chat-box > .partners {
+	background-color: var(--orange-logo) !important;
+	border: 1px solid var(--orange) !important;
+}
 .chat-box > dl dl {
 	margin-left: 32px;
 }
@@ -316,6 +320,7 @@ section {
 	margin-left: 5px;
 }
 .chat-box > dl dd {
+	position: relative;
 	margin: 5px;
 }
 .chat-title {
@@ -335,6 +340,12 @@ section {
 	font-weight: 400;
 	color: var(--middle-gray);
 	line-height: 1.2rem;
+}
+.chat-reply {
+	float: right;
+	margin-left: 10px;
+	font-size: 1.2rem;
+	color: var(--orange);
 }
 /*Карточка фермера*/
 .cart-f {
@@ -383,6 +394,10 @@ ul.cont-text li {
 	background-color: var(--green);
 	font-size: 0.9rem;
 }
+.partner-rating-f {
+	display: flex;
+	align-items: center;
+}
 .description {
 	margin: 15px 0;
 }
@@ -427,11 +442,53 @@ ul.cont-text li {
 .categories-col-r > div {
 	margin: 10px 0;
 }
+
 .partner-line-shop {
 	display: flex;
-	
-	margin: 0 -10px;
+	justify-content: stretch;
+	align-items: center;
+	margin: 15px -10px;
+	padding: 5px 0;
+	border: 1px solid var(--green);
 }
 .partner-rating, .partner-logo, .partner-name, .partner-category, .partner-contact{
 	padding: 0 10px;
+}
+.partner-rating {
+	width: 118px;
+}
+.partner-line-shop > .partner-logo {
+	width: 21%;
+}
+.partner-line-shop > .partner-logo figure {
+	margin-bottom: 0;
+}
+.partner-name {
+	font-size: 1.3rem;
+	font-family: "Roboto Condensed", sans-serif;
+	color: var(--orange);
+	width: 33%;
+	font-weight: 700;
+}
+.partner-name a {
+	color: var(--orange);
+}
+.partner-category {
+	width: 22%;
+}
+.partner-contact {
+	min-width: 15%;
+}
+.star {
+	position: relative;
+	width: 98px;
+}
+.star-gray img, .star-orang img {
+	vertical-align: top;
+}
+.star-orang {
+	position: absolute;
+	top: 0;
+	left: 0;
+	overflow: hidden;
 }
