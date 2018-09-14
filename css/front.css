@@ -25,6 +25,8 @@ section {
 .top {
 	background-color: var(--light-gray);
 	padding: 10px 0;
+	position: relative;
+	z-index: 200;
 }
 .contacts {
 	text-align: center;
@@ -42,7 +44,7 @@ section {
 .email a span {
 	color: var(--green);
 }
-.panal-in {
+.panel-in-top {
 	margin-top: 10px;
 	display: flex;
 	justify-content: center;
@@ -65,13 +67,13 @@ section {
 	color: #000000;
 }
 @media (min-width: 768px) {
-	.panal-in {
+	.panel-in-top {
 		margin-top: 0;
 	}
 	.contacts {
 		text-align: left;
 	}
-	.panal-in {
+	.panel-in-top {
 		justify-content: flex-end;
 	}
 }
@@ -82,7 +84,7 @@ section {
 	padding: 5px 0;
 	/*position: fixed;*/
 	position: relative;
-	z-index: 500;
+	z-index: 100;
 	top: 0;
 	left: 0;
 	right: 0;
@@ -197,9 +199,10 @@ section {
 .main-menu ul li a {
 	display: block;
 	position: relative;
-	color: var(--all-color);
+	color: #000;
 	padding: 5px 15px;
-	font-weight: 600;
+	text-transform: uppercase;
+	font-weight: 300;
 }
 .main-menu ul li.active a {
 	color: var(--green);
@@ -270,7 +273,7 @@ section {
 	text-shadow: 1px 1px 0 rgba(255, 255, 255, .7);
 	color: black;
 }
-.panal-fist-page .panal-in {
+.panal-fist-page .panel-in-top {
 	margin: 30px 0;
 	justify-content: center;
 }
@@ -541,9 +544,9 @@ ul.cont-text li {
 }
 .partner-title h1 {
 	font-size: 1.7rem;
-	color: var(--orange);
 	text-transform: uppercase;
 	margin-bottom: 30px;
+	font-weight: 300;
 }
 .partner-logo figure img {
 	width: 100%;
@@ -626,14 +629,14 @@ ul.cont-text li {
 	margin-bottom: 0;
 }
 .partner-name {
-	font-size: 1.3rem;
-	font-family: "Roboto Condensed", sans-serif;
-	color: var(--orange);
+	font-size: 1.6rem;
+	text-transform: uppercase;
 	width: 33%;
-	font-weight: 700;
+	font-weight: 300;
+	font-family: "Roboto Condensed", sans-serif;
 }
 .partner-name a {
-	color: var(--orange);
+	color: var(--all-color);
 }
 .partner-category {
 	width: 22%;
@@ -819,4 +822,43 @@ ul.cont-text li {
 	width: 100%;
 	height: 100px;
 }
+/*вход выход */
+.login-in {
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	border-radius: 50%;
+	overflow: hidden;
+	position: relative;
+}
+.link-login-in img {
+	width: 40px;
+}
+.panel-on {
+	position: relative;
+}
+.panel-on-p {
+	position: absolute;
+	top: 50px;
+	right: 0;
+	display: none;
+	background: var(--dark-gray);
+	color: #fff;
+	padding: 10px;
+	-webkit-box-shadow: 1px 1px 2px #ffffff;
+	-moz-box-shadow:  1px 1px 2px #ffffff;
+	box-shadow:  1px 1px 2px #ffffff;
+}
+.panel-on-p.active {
+	display: block;
+}
+.panel-on-p ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+.panel-on-p a {
+	color: #ffffff;
+}
+
+
 /* Подвал */

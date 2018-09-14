@@ -5,6 +5,11 @@ $('.burger').on('click', function(){
 	$(this).next().toggleClass('active');
 	$(this).toggleClass('active');
 });
+// клик по иконке
+$('.login-in').on('click', function(){
+	$(this).next().slideToggle(500);
+	$(this).toggleClass('active');
+});
 // tabs
 $('ul.tabs-caption').on('click', 'li:not(.active)', function() {
 	$(this)
