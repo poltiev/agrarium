@@ -3,9 +3,10 @@
 	--dark-gray: #383838;
 	--middle-gray: #595959;
 	--light-gray: #f5f5f5;
-	--green: #63a603;
+	--green: #33cc00;
 	--middle-green: #b1ff9a;
-	--orange: #f46510;
+	--yellow: #ffdb00;
+	--orange: #FFC30D;
 	--orange-logo: #fbb03b;
 	--white: #fff;
 }
@@ -50,12 +51,16 @@ section {
 	color: var(--white);
 	background-color: var(--green);
 }
-.in:hover, .reg:hover {
+.in:hover {
 	color: var(--white);
 }
 .reg {
 	margin-left: 15px;
 	background-color: var(--orange);
+	color: var(--dark-gray);
+}
+.reg:hover {
+	color: #000000;
 }
 @media (min-width: 768px) {
 	.panal-in {
@@ -86,10 +91,23 @@ section {
 .top-menu.active {
 	box-shadow: 0 1px 3px rgba(0, 0, 0, .5)
 }
-
+.logo {
+	text-align: center;
+}
 .logo img {
 	width: 100%;
 	max-width: 210px;
+}
+.main-menu-col {
+	position: relative;
+}
+.main-menu-col h1 {
+	font-weight: 300;
+	font-size: 1.8rem;
+	text-transform: uppercase;
+	color: #383838;
+	margin: 10px 0 10px 0;
+	text-align: center;
 }
 @media (min-width: 576px) {
 	.logo img {
@@ -97,8 +115,14 @@ section {
 		max-width: 300px;
 	}
 }
-.main-menu-col {
-	position: relative;
+@media (min-width: 992px) {
+	.logo  {
+		text-align: left;
+	}
+	.main-menu-col h1 {
+		text-align: right;
+		margin: 27px 0 0 0;
+	}
 }
 @media (min-width: 1200px){
 	.main-menu-col {
@@ -219,8 +243,10 @@ section {
 	padding-bottom: 80px;
 }
 .firstPage {
-	background-image: url("../img/pole_1_1920.jpg");
+	background-image: url("../img/pole_2_1920.jpg");
 	background-size: cover;
+	background-repeat: no-repeat;
+	position: relative;
 }
 .panal-fist-page {
 	margin: 30px auto;
@@ -244,6 +270,138 @@ section {
 	margin: 30px 0;
 	justify-content: center;
 }
+	/*Дрон*/
+.dron
+{
+	-webkit-animation:dron-fly 20s linear infinite;
+	-moz-animation:dron-fly 20s linear infinite;
+	-ms-animation:dron-fly 20s linear infinite;
+	-o-animation:dron-fly 20s linear infinite;
+	animation:dron-fly 20s linear infinite;
+	position: absolute;
+	top: 10px;
+	right: 10px;
+
+}
+.dron img {
+	width: 250px;
+}
+.fui-cross-circle.close-left {
+	cursor:pointer;}
+@-webkit-keyframes dron-fly {
+	20% {top: 5%; right: 20%}
+	40% {top: 55%; right: 10%; -moz-transform:rotate(-10deg);  -webkit-transform:rotate(-10deg);  -o-transform:rotate(-10deg);  -ms-transform:rotate(-10deg);}
+	50% {-moz-transform:rotate(-30deg);  -webkit-transform:rotate(-30deg);  -o-transform:rotate(-30deg);  -ms-transform:rotate(-30deg);}
+	70% {top: 5%; right: 90%}
+	80% {-moz-transform:rotate(10deg);  -webkit-transform:rotate(10deg);  -o-transform:rotate(10deg);  -ms-transform:rotate(10deg);}
+}
+
+
+@-ms-keyframes dron-fly {
+	20% {top: 5%; right: 20%}
+	40% {top: 55%; right: 10%; -moz-transform:rotate(-10deg);  -webkit-transform:rotate(-10deg);  -o-transform:rotate(-10deg);  -ms-transform:rotate(-10deg);}
+	50% {-moz-transform:rotate(-30deg);  -webkit-transform:rotate(-30deg);  -o-transform:rotate(-30deg);  -ms-transform:rotate(-30deg);}
+	70% {top: 5%; right: 80%}
+	80% {-moz-transform:rotate(10deg);  -webkit-transform:rotate(10deg);  -o-transform:rotate(10deg);  -ms-transform:rotate(10deg);}
+}
+@-o-keyframes dron-fly {
+	20% {top: 5%; right: 20%}
+	40% {top: 55%; right: 10%; -moz-transform:rotate(-10deg);  -webkit-transform:rotate(-10deg);  -o-transform:rotate(-10deg);  -ms-transform:rotate(-10deg);}
+	50% {-moz-transform:rotate(-30deg);  -webkit-transform:rotate(-30deg);  -o-transform:rotate(-30deg);  -ms-transform:rotate(-30deg);}
+	70% {top: 5%; right: 80%}
+	80% {-moz-transform:rotate(10deg);  -webkit-transform:rotate(10deg);  -o-transform:rotate(10deg);  -ms-transform:rotate(10deg);}
+}
+@-moz-keyframes dron-fly {
+	20% {top: 5%; right: 30%}
+	40% {top: 55%; right: 10%; -moz-transform:rotate(-10deg);  -webkit-transform:rotate(-10deg);  -o-transform:rotate(-10deg);  -ms-transform:rotate(-10deg);}
+	50% {-moz-transform:rotate(-30deg);  -webkit-transform:rotate(-30deg);  -o-transform:rotate(-30deg);  -ms-transform:rotate(-30deg);}
+	70% {top: 5%; right: 80%}
+	80% {-moz-transform:rotate(10deg);  -webkit-transform:rotate(10deg);  -o-transform:rotate(10deg);  -ms-transform:rotate(10deg);}
+}
+
+@keyframes dron-fly {
+	20% {top: 5%; right: 35%}
+	40% {top: 55%; right: 10%; -moz-transform:rotate(-10deg);  -webkit-transform:rotate(-10deg);  -o-transform:rotate(-10deg);  -ms-transform:rotate(-10deg);}
+	50% {-moz-transform:rotate(-30deg);  -webkit-transform:rotate(-30deg);  -o-transform:rotate(-30deg);  -ms-transform:rotate(-30deg);}
+	70% {top: 5%; right: 80%}
+	80% {-moz-transform:rotate(10deg);  -webkit-transform:rotate(10deg);  -o-transform:rotate(10deg);  -ms-transform:rotate(10deg);}
+}
+
+/*
+.light{
+	-webkit-animation:light-blinck 2s linear infinite;
+	-moz-animation:light-blinck 2s linear infinite;
+	-ms-animation:light-blinck 2s linear infinite;
+	-o-animation:light-blinck 2s linear infinite;
+	animation:light-blinck 2s linear infinite;
+	position: absolute;
+	border-radius: 100%;
+	width: 250px;
+	height: 250px;
+	background-image: url("../img/flash.png");
+	background-size: 100%;
+	left: 84px;
+	top: 128px;
+	transition: 500ms;
+	opacity: 0;
+}
+@-webkit-keyframes light-blinck {
+	10% {opacity: 1}
+	20% {opacity: 0}
+	30% {opacity: 0}
+	40% {opacity: 0}
+	50% {opacity: 0}
+	60% {opacity: 0}
+	70% {opacity: 0}
+	80% {opacity: 0}
+	90% {opacity: 1}
+}
+@-o-keyframes light-blinck {
+	10% {opacity: 1}
+	20% {opacity: 0}
+	30% {opacity: 0}
+	40% {opacity: 0}
+	50% {opacity: 0}
+	60% {opacity: 0}
+	70% {opacity: 0}
+	80% {opacity: 0}
+	90% {opacity: 1}
+}
+@-moz-keyframes light-blinck {
+	10% {opacity: 1}
+	20% {opacity: 0}
+	30% {opacity: 0}
+	40% {opacity: 0}
+	50% {opacity: 0}
+	60% {opacity: 0}
+	70% {opacity: 0}
+	80% {opacity: 0}
+	90% {opacity: 1}
+}
+@-ms-keyframes light-blinck {
+	10% {opacity: 1}
+	20% {opacity: 0}
+	30% {opacity: 0}
+	40% {opacity: 0}
+	50% {opacity: 0}
+	60% {opacity: 0}
+	70% {opacity: 0}
+	80% {opacity: 0}
+	90% {opacity: 1}
+}
+@keyframes light-blinck {
+	10% {opacity: 1}
+	20% {opacity: 0}
+	30% {opacity: 0}
+	40% {opacity: 0}
+	50% {opacity: 0}
+	60% {opacity: 0}
+	70% {opacity: 0}
+	80% {opacity: 0}
+	90% {opacity: 1}
+}
+*/
+	/*Дрон*/
 	/*Левая  колонка*/
 .left-col {}
 	/*Левое меню*/
