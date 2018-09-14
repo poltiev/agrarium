@@ -4,11 +4,13 @@
 	--middle-gray: #595959;
 	--light-gray: #f5f5f5;
 	--green: #33cc00;
+	--blue:#4C0BD9;
 	--middle-green: #b1ff9a;
 	--yellow: #ffdb00;
 	--orange: #FFC30D;
 	--orange-logo: #fbb03b;
 	--white: #fff;
+	--color-soc-f: #3b5998;
 }
 
 body {
@@ -247,6 +249,8 @@ section {
 	background-size: cover;
 	background-repeat: no-repeat;
 	position: relative;
+	height: 100%;
+	min-height: 100vh;
 }
 .panal-fist-page {
 	margin: 30px auto;
@@ -650,3 +654,169 @@ ul.cont-text li {
 	left: 0;
 	overflow: hidden;
 }
+/*Табс*/
+.tabs {
+}
+.tabs-status {
+	font-size: 1.1rem;
+	font-weight: 600;
+	margin-bottom: 10px;
+}
+.tabs-caption {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+.tabs-caption li {
+	flex-grow: 1;
+	text-transform: uppercase;
+	font-weight: 300;
+	padding: 4px 0 3px 10px;
+	font-size: 1rem;
+	cursor: pointer;
+	text-align: left;
+}
+.tabs-caption li:hover {
+	background-color: rgba(255, 255, 255, 0.5);
+}
+.tabs-caption li.active {
+	color: #ffffff;
+	background-color: var(--green);
+}
+.tabs-caption li.active:before {
+	content: '\e808';
+	font-family: "fontello";
+	font-style: normal;
+	font-weight: normal;
+	speak: none;
+
+	display: inline-block;
+	text-decoration: inherit;
+	width: 1em;
+	margin-right: .4em;
+	text-align: center;
+
+}
+.tabs-content {
+	display: none;
+	padding-top: 20px;
+	padding-bottom: 50px;
+	color: var(--all-color);
+}
+.tabs-content.active {
+	display: block;
+	margin: 0 7.33%;
+}
+
+/* panel in*/
+.in-panel .in-soc {
+	background-color: var(--color-soc-f);
+}
+.in-panel h3 {
+	text-align: center;
+	font-weight: 300;
+	font-size: 2.5rem;
+	margin-bottom: 30px;
+}
+.in-panel h3.head-reg {
+	margin-top: 15px;
+}
+.in-soc  a {
+	display: flex;
+	color: #fff;
+	align-items: center;
+}
+.in-soc a span:nth-of-type(2) {
+	flex-grow: 1;
+	text-align: center;
+	font-size: 0.9em;
+	padding-right:7px;
+}
+.in-soc .icon-facebook-official {
+	padding: 8px 5px 6px 5px;
+	display: inline-block;
+}
+.in-soc .icon-facebook-official:before {
+	font-size: 1.5rem;
+}
+.in-soc .soc-zag {
+	display: inline-block;
+}
+.line-form {
+	margin: 20px 0;
+}
+.line-form .or {
+	font-size: 1.2rem;
+	font-weight: 900;
+}
+.line-form input.input-in {
+	border: 1px solid var(--blue);
+	background-color: rgba(255, 255, 255, 1) !important;
+	width: 100%;
+	padding: 10px;
+}
+.row-line {
+	display: flex;
+	justify-content: stretch;
+	align-items: center;
+}
+.row-line-fl {
+	display: flex;
+	justify-content: left;
+	align-items: center;
+}
+.row-line label, .row-line-fl label  {
+	margin-bottom: 0;
+	display: flex;
+	align-items: center;
+}
+.row-line > div {
+	flex-grow: 1;
+}
+.row-line-fl > div {
+	padding-right: 15px;
+}
+.row-line > div .input-check, .row-line-fl > div .input-check  {
+	display: none;
+}
+
+.line-form input[type="checkbox"] + label,
+.line-form input[type="radio"] + label {
+	cursor: pointer;
+}
+.line-form  input.input-check[type="checkbox"] + label::before,
+.line-form  input.input-check[type="radio"] + label::before {
+	content: "";
+	display: inline-block;
+	height: 21px;
+	width: 21px;
+	margin: 0 10px 0 0;
+	background: url("../img/img-check.png") no-repeat 0 -24px;
+}
+.line-form  input.input-check[type="radio"] + label::before {
+	background-image: url("../img/img-radio.png");
+}
+.line-form  input.input-check[type="checkbox"]:checked + label::before,
+.line-form  input.input-check[type="radio"]:checked + label::before {
+	background-position: 0 -2px;
+}
+.line-form .input-submit {
+	display: inline-block;
+	border: 1px solid var(--light-gray);
+	background-color: var(--green);
+	color: #fff;
+	font-weight: 400;
+	text-align: center;
+	width: 100%;
+	cursor: pointer;
+	padding: 10px 0;
+	font-size: 1.3rem;
+}
+.input-about {
+	display: inline-block;
+	border: 1px solid var(--blue);
+	font-weight: 400;
+	width: 100%;
+	height: 100px;
+}
+/* Подвал */
