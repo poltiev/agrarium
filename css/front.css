@@ -22,27 +22,9 @@ section {
 	max-width: 1900px;
 	margin: 0 auto;
 }
-.top {
-	background-color: var(--light-gray);
-	padding: 10px 0;
-	position: relative;
-	z-index: 200;
-}
 .contacts {
 	text-align: center;
 	font-size: 0.9rem;
-}
-.telephone .icon-phone {
-	color: var(--green);
-}
-.email {
-	margin-left: 5px;
-}
-.email a {
-	color: var(--all-color);
-}
-.email a span {
-	color: var(--green);
 }
 .panel-in-top {
 	margin-top: 10px;
@@ -54,6 +36,7 @@ section {
 	padding: 8px 18px 8px 10px;
 	color: var(--white);
 	background-color: var(--green);
+	border-radius: 3px;
 }
 .in:hover {
 	color: var(--white);
@@ -116,7 +99,7 @@ section {
 @media (min-width: 576px) {
 	.logo img {
 		width: 100%;
-		max-width: 300px;
+		max-width: 155px;
 	}
 }
 @media (min-width: 992px) {
