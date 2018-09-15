@@ -83,38 +83,10 @@ section {
 }
 .logo img {
 	width: 100%;
-	max-width: 210px;
+	max-width: 155px;
 }
 .main-menu-col {
 	position: relative;
-}
-.main-menu-col h1 {
-	font-weight: 300;
-	font-size: 1.8rem;
-	text-transform: uppercase;
-	color: #383838;
-	margin: 10px 0 10px 0;
-	text-align: center;
-}
-@media (min-width: 576px) {
-	.logo img {
-		width: 100%;
-		max-width: 155px;
-	}
-}
-@media (min-width: 992px) {
-	.logo  {
-		text-align: left;
-	}
-	.main-menu-col h1 {
-		text-align: right;
-		margin: 27px 0 0 0;
-	}
-}
-@media (min-width: 1200px){
-	.main-menu-col {
-		margin-top: 17px;
-	}
 }
 .burger {
 	border-radius: 2px;
@@ -170,7 +142,7 @@ section {
 }
 .main-menu ul {
 	list-style: none;
-	padding: 10px 0;
+	padding: 0;
 	margin: 0;
 	display: flex;
 	flex-direction: column;
@@ -396,9 +368,13 @@ section {
 .left-col {}
 	/*Левое меню*/
 .module > h3 {
-	font-size: 1.4rem;
-	padding-left: 18px;
-	color: var(--orange);
+	font-size: 1.3rem;
+	padding-left: 10px;
+	font-weight: 300;
+	color: var(--green)
+}
+.right-col .module > h3 {
+	padding-left: 0;
 }
 .left-menu ul {
 	list-style: none;
@@ -409,7 +385,7 @@ section {
 }
 .left-menu a {
 	display: block;
-	padding: 6px 18px;
+	padding: 6px 10px;
 	color: var(--all-color);
 }
 	/*Подвал*/
@@ -522,8 +498,9 @@ ul.cont-text li {
 	flex-grow: 1;
 }
 .cart-name {
-	font-weight: 600;
-	font-size: 1.2rem;
+	font-weight: 300;
+	font-size: 1.6rem;
+	margin-bottom: 10px;
 }
 .partner-title h1 {
 	font-size: 1.7rem;
